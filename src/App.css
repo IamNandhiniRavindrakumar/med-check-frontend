@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f9fc;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+.dashboard-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logout-btn {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.med-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.med-form input {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.med-form button {
+  padding: 10px;
+  background: seagreen;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.med-list {
+  list-style: none;
+  padding: 0;
+}
+
+.med-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f3f3f3;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.taken {
+  color: green;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 220px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .med-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logout-btn,
+  .med-form input,
+  .med-form button {
+    width: 100%;
+  }
+}
