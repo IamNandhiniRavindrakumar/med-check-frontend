@@ -7,7 +7,7 @@ This is a full-stack medication tracking application developed as part of an int
 **Frontend:**
 - React.js
 - JavaScript
-- Tailwind CSS
+- CSS(plain)
 - Deployed on **Vercel**
 
 **Backend:**
