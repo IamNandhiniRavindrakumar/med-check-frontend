@@ -1,3 +1,16 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.App, .login-page, .dashboard-container {
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
 .login-page, .dashboard-container {
   max-width: 500px;
   width: 100%;
@@ -62,31 +75,7 @@ button:hover {
   border-bottom: 1px solid #eee;
 }
 
-@media screen and (max-width: 400px) {
-  .top-bar {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .dashboard-container {
-    padding: 1rem;
-  }
-}
-
-
-/* styles.css */
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f0f2f5;
-  color: #333;
-}
-
-.App, .login-page, .dashboard-container {
-  padding: 1rem;
-  max-width: 600px;
-  margin: auto;
-}
+/* --- */
 
 .login-page {
   display: flex;
@@ -211,5 +200,15 @@ button:hover {
   .med-item button {
     margin-top: 0.3rem;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .dashboard-container {
+    padding: 1rem;
   }
 }
