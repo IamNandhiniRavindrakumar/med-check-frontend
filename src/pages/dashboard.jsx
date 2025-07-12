@@ -7,7 +7,7 @@ export default function Dashboard({userEmail}) {
     
     // fetch all medication from the backend
     const fetchMed = () => {
-        fetch("http://localhost:5500/api/medications/")
+        fetch("http://med-check-backend.onrender.com/api/medications/")
         .then((res)=>{
             if(!res.ok) {
                 throw new Error("failed to fetch medications")
@@ -25,7 +25,7 @@ export default function Dashboard({userEmail}) {
     // add medications
     const addMed = (e) => {
          e.preventDefault()
-        fetch("http://localhost:5500/api/medications/add",{
+        fetch("http://med-check-backend.onrender.com/api/medications/add",{
             method : "POST",
             headers : {"content-type" : "application/json"},
             body : JSON.stringify({name,dosage})
@@ -48,7 +48,7 @@ export default function Dashboard({userEmail}) {
 
     // mark as taken
     const markAsTaken = (id) => {
-        fetch(`http://localhost:5500/api/medications/mark/${id}`,
+        fetch(`http://med-check-backend.onrender.com/api/medications/mark/${id}`,
             {
                 method: "PATCH"
             }
