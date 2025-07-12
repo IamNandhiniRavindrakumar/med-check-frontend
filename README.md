@@ -1,12 +1,55 @@
-# React + Vite
+# 💊 Medication Tracking App — Full Stack Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a full-stack medication tracking application developed as part of an interview task. The app includes both frontend and backend functionalities, fully deployed and tested.
 
-Currently, two official plugins are available:
+## 🔧 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Frontend:**
+- React.js
+- JavaScript
+- Tailwind CSS
+- Deployed on **Vercel**
 
-## Expanding the ESLint configuration
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB (using Mongoose)
+- Deployed on **Render**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> **Note:** Although the suggested technologies were different, I used this stack to reflect my current strengths and ensure a fully working deployment.
+
+## 🚀 Live Links
+
+- **Frontend (Vercel):** [med-check-frontend.vercel.app](med-check-frontend.vercel.app)  
+- **Backend API (Render):** [https://med-check-backend.onrender.com](https://med-check-backend.onrender.com)  
+- **Frontend GitHub Repository:** [https://github.com/IamNandhiniRavindrakumar/med-check-frontend](https://github.com/IamNandhiniRavindrakumar/med-check-frontend)  
+- **Backend GitHub Repository:** [https://github.com/IamNandhiniRavindrakumar/med-check-backend](https://github.com/IamNandhiniRavindrakumar/med-check-backend)
+
+## ✅ Key Features
+
+- Login and Signup functionality
+- Separate dashboard for patient and caretaker
+- Add / track / update medication details
+- Clean and responsive UI
+- MongoDB-based data storage
+
+## 📂 Folder Structure
+
+project-root/
+├── frontend/ # React + Tailwind CSS (Vercel)
+├── backend/ # Node + Express + MongoDB (Render)
+└── README.md
+
+
+## 🛠️ Setup Instructions (for local use)
+
+### Backend
+```bash
+cd backend
+npm install
+npm run dev
+
+### Frontend
+cd frontend
+npm install
+npm start
